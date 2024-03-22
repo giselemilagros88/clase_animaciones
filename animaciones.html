@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animaciones</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <style>
+    @keyframes flotar{
+        0%{
+            transform: translateY(0);
+            background-color: rgb(248, 226, 117);
+        }
+        50%{
+            transform: translateY(-30px);
+            background-color: pink;
+        }
+        100%{
+            transform: translateY(0);
+            background-color: rgb(117, 248, 117);   
+        }
+    }
+    @keyframes girar {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+        
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .flex{
+        width: 50%;
+        margin-inline: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+    }
+    .bola{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        animation-name: flotar;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+
+    }
+    .uno{
+        background-color: rgb(248, 226, 117);
+    }
+    .dos{
+        background-color: rgb(248, 117, 117);
+        animation-delay: 0.2s;
+      
+    }
+    .tres{
+        background-color: rgb(117, 248, 117); 
+        animation-delay: 0.4s;
+    }
+   
+   </style>
+</head>
+<body>
+    <h1 class="animate__animated animate__bounce animate__delay-2s animate__infinite animate__slow">HOLA MUNDO</h1>
+    <section class="flex">
+        <div class="bola uno"></div>
+        <div class="bola dos"></div>
+        <div class="bola tres"></div>
+
+    </section>
+</body>
+</html>

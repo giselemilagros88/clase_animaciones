@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drop-shadow</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            height: 100vh;
+        }
+        main{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100%;
+        }
+        .caja{
+
+            width: 600px;
+            height: 600px;
+          
+            img{
+                filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.808));
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+           
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="caja">
+            <img src="wine.png" alt="">
+        </div>
+    </main>
+  
+</body>
+</html>
